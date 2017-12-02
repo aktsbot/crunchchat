@@ -1,0 +1,5 @@
+{
+	"port" : "4000",
+	"mongo_host" : "ds129156.mlab.com:29156",
+	"mongo_db" : "crunchchat"
+}

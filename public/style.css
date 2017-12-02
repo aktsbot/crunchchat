@@ -1,0 +1,66 @@
+* {
+	font-family: Monospace;
+}
+
+body {
+	background-color: #0C0C0D;
+}
+
+.container {
+	width: 50%;
+	margin: auto;
+	min-width: 480px;
+	margin-top: 25px;
+}
+
+.banner {
+	color: #ABA6A3;
+	text-align: center;
+}
+
+#chat-window, #message-box, #notify {
+	background-color: #2A2A2E;
+	color: #ABA6A3;
+	border: 1px solid #ABA6A3;
+	width: 100%;
+	padding: 5px 5px;
+}
+
+#chat-window {
+	height: 450px;
+	/*overflow-y: scroll;*/ /* for scroll bar */
+	overflow: auto; /* http://jsfiddle.net/yamamoto3/eHscS/ */
+}
+
+#message-box {
+	border-top: none;
+	padding: 15px, 10px;
+	resize: none;
+}
+
+#notify {
+    bottom: 0;
+    width: 300px;
+   	margin-top: 50px;
+    text-align: center;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+  	margin-right: auto;
+  	/*border: 1px solid #2A2A2E;*/
+}
+
+/* removes focus from input fields */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-element-scrollable */
+/* removes scroll bar from chat window */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
