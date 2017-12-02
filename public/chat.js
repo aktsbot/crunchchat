@@ -49,7 +49,8 @@ if(!localStorage.getItem('handle')) {
 }
 
 // set our socket connection to our server
-let socket = io.connect('http://localhost:4000');
+// let socket = io.connect('http://localhost:4000');
+let socket = io.connect('https://evening-citadel-98495.herokuapp.com');
 
 // get the handle from localStorage.getItem('handle')
 let message = document.getElementById('message-box'),
