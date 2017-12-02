@@ -80,6 +80,8 @@ message.addEventListener('keydown', function(e) { // event keycode
 		}
 
 		socket.emit('chat', data); // send data back to our server
+
+		message.value = "";
 	}
 
 });
@@ -115,8 +117,6 @@ socket.on('dbchats', function(data) { // array meh!
 
 	// the scroll to point at bottom of div
 	cw.scrollTop = cw.scrollHeight;
-
-	message.value = "";
 
 });
 
